@@ -10,4 +10,5 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
-    ste
+    steps:
+    - uses: actions/chec
