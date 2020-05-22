@@ -15,4 +15,7 @@ jobs:
 
     - name: Set up Go
       uses: actions/setup-go@v3
-      w
+      with:
+        go-version: 1.18
+
+  
