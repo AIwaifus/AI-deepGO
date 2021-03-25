@@ -1,4 +1,6 @@
 package graph
 
 func argmax(x []float64) int {
-	key :
+	key := 0
+	value := x[key]
+	for k,
