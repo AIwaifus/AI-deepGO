@@ -1,1 +1,1 @@
-mod
+module github.com/therfoo/th
