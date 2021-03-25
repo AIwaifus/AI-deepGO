@@ -1,3 +1,4 @@
 package graph
 
-fun
+func argmax(x []float64) int {
+	key :
