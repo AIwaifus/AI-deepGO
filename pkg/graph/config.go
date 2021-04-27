@@ -5,3 +5,7 @@ type Config struct {
 	LearningRate LearningRate
 	Optimizer    Optimizer
 	Regularizer  Regularizer
+}
+
+func (c Config) Validate() Config {
+	
