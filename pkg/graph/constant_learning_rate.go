@@ -1,1 +1,3 @@
-pack
+package graph
+
+type ConstantLe
