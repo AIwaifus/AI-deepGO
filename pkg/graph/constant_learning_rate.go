@@ -2,4 +2,4 @@ package graph
 
 type ConstantLearningRate float64
 
-func (
+func (r ConstantLearningRate) Rate(
