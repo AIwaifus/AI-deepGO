@@ -1,3 +1,5 @@
 package graph
 
-type ConstantLe
+type ConstantLearningRate float64
+
+func (
