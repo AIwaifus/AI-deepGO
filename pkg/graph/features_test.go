@@ -67,3 +67,35 @@ func TestFeaturesShuffle(t *testing.T) {
 			got := v.features.X
 			want := v.want.X
 			for i := range want {
+				for j := range want[i] {
+					if want[i][j] != got[i][j] {
+						t.Fatalf("want %v, got %v", want, got)
+					}
+				}
+			}
+			got = v.features.Y
+			want = v.want.Y
+			for i := range want {
+				for j := range want[i] {
+					if want[i][j] != got[i][j] {
+						t.Fatalf("want %v, got %v", want, got)
+					}
+				}
+			}
+		})
+	}
+}
+
+func TestFeaturesSplit(t *testing.T) {
+	for k, v := range []struct {
+		data       Features
+		training   Features
+		validating Features
+	}{
+		{
+			Features{
+				X: [][]float64{{0.0}, {0.1}, {0.2}, {0.3}, {0.4}, {0.5}, {0.6}, {0.7}, {0.8}, {0.9}},
+				Y: [][]float64{{0, 1}, {0, 1}, {0, 1}, {0, 1}, {0, 1}, {1, 0}, {1, 0}, {1, 0}, {1, 0}, {1, 0}},
+			},
+			Features{
+				X: [][]float64{{0.0}, {0.1}, {0.2}, {0.3}, {0.4}, {0.5}, {0.6}, {0.7}},
