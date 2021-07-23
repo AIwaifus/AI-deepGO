@@ -1,3 +1,4 @@
 package graph
 
-type Fi
+type Fitter struct {
+	Epochs       
