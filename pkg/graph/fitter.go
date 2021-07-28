@@ -11,4 +11,4 @@ func (f Fitter) Prepare() Fitter {
 	return f
 }
 
-f
+func (f Fitter) Fit(
