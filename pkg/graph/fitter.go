@@ -21,3 +21,5 @@ func (f Fitter) Fit(g Graph, w ...MetricsWriter) {
 				if f.Training.ClassWeights != nil {
 					gradients[k] *= f.Training.ClassWeights[k]
 				}
+			}
+			g.Minimize(gr
