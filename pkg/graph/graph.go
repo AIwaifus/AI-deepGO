@@ -101,3 +101,24 @@ func (g Graph) NumericGradients(x, y []float64) [][][]float64 {
 func (g Graph) Weights() [][][]float64 {
 	weights := make([][][]float64, len(g))
 	for i := range g {
+		if learner, ok := g[i].(Minimizeable); ok {
+			weights[i] = learner.Weights()
+		}
+	}
+	return weights
+}
+
+func New(layers ...Layer) Graph {
+	var graph = Graph(layers)
+	for i := 1; i < len(layers); i++ {
+		graph[i].SetShape(layers[i-1].Shape())
+	}
+	for i := range graph {
+		if layer, ok := graph[i].(Minimizeable); ok {
+			minimizer := Minimizer{gradients: layer.Gradients(), weights: layer.Weights()}
+			minimizer.Layer = graph[i]
+			graph[i] = &minimizer
+		}
+	}
+	return graph
+}
