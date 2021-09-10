@@ -1,4 +1,5 @@
 package graph
 
 type Layer interface {
-	Estim
+	Estimate([]float64) []float64
+	M
