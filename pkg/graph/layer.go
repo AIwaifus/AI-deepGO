@@ -1,1 +1,4 @@
-package gra
+package graph
+
+type Layer interface {
+	Estim
