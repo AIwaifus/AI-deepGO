@@ -8,4 +8,5 @@ import (
 type Metrics struct {
 	Actual   []float64
 	Estimate []float64
-	Ep
+	Epoch    int
+	Loss     []float64
