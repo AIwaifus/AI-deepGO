@@ -6,4 +6,6 @@ import (
 )
 
 type Metrics struct {
-	Actual 
+	Actual   []float64
+	Estimate []float64
+	Ep
