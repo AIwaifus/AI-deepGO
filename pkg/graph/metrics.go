@@ -13,4 +13,5 @@ type Metrics struct {
 	Sample   int
 }
 
-func (m Metric
+func (m Metrics) String() string {
+	var 
