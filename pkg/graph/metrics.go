@@ -10,3 +10,7 @@ type Metrics struct {
 	Estimate []float64
 	Epoch    int
 	Loss     []float64
+	Sample   int
+}
+
+func (m Metric
