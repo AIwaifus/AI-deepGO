@@ -14,4 +14,4 @@ type Metrics struct {
 }
 
 func (m Metrics) String() string {
-	var 
+	var str = func(f []float64) string 
