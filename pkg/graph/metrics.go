@@ -16,4 +16,5 @@ type Metrics struct {
 func (m Metrics) String() string {
 	var str = func(f []float64) string {
 		s := make([]string, len(f))
-		for k := range f
+		for k := range f {
+			s[k] = fmt.Sprintf("%
