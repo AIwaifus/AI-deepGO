@@ -19,4 +19,6 @@ func (m Metrics) String() string {
 		for k := range f {
 			s[k] = fmt.Sprintf("%.4f", f[k])
 		}
-		return fmt.Sprintf("[%s]", strings.Jo
+		return fmt.Sprintf("[%s]", strings.Join(s, ", "))
+	}
+	var loss = func
