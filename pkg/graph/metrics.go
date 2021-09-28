@@ -22,4 +22,5 @@ func (m Metrics) String() string {
 		return fmt.Sprintf("[%s]", strings.Join(s, ", "))
 	}
 	var loss = func(a, y []float64) float64 {
-		var s
+		var sum float64
+		for k := range
