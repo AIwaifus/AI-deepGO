@@ -23,4 +23,6 @@ func (m Metrics) String() string {
 	}
 	var loss = func(a, y []float64) float64 {
 		var sum float64
-		for k := range
+		for k := range a {
+			sum += a[k] - y[k]
+		
