@@ -25,4 +25,7 @@ func (m Metrics) String() string {
 		var sum float64
 		for k := range a {
 			sum += a[k] - y[k]
-		
+		}
+		return sum
+	}
+	return 
