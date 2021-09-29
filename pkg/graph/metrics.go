@@ -28,4 +28,4 @@ func (m Metrics) String() string {
 		}
 		return sum
 	}
-	return 
+	return fmt.Sprintf("epoch: %d, 
