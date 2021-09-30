@@ -28,4 +28,4 @@ func (m Metrics) String() string {
 		}
 		return sum
 	}
-	return fmt.Sprintf("epoch: %d, loss: %.4f, estimate: %s,
+	return fmt.Sprintf("epoch: %d, loss: %.4f, estimate: %s, actual: %s", m.Epoch, loss(m.Est
