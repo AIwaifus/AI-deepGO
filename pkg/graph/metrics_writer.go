@@ -1,3 +1,4 @@
 package graph
 
-type MetricsWriter int
+type MetricsWriter interface {
+	Write(Metrics)
