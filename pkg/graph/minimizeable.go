@@ -1,3 +1,4 @@
 package graph
 
-type Minimizea
+type Minimizeable interface {
+	Gradients() 
