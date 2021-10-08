@@ -57,3 +57,12 @@ func (m *Minimizer) optimize() {
 	}
 	g := m.optimizer.Optimize(m.batch[0])
 	for i := range g {
+		copy(m.batch[0][i], g[i])
+	}
+}
+
+func (m *Minimizer) regularize() {
+	if m.regularizer != nil {
+		m.regularizer.Regularize(m.batch[0])
+	}
+}
