@@ -1,4 +1,5 @@
 package graph
 
 type Regularizer interface {
-	Regu
+	Regularize([][]float64)
+}
