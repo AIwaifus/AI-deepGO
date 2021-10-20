@@ -11,4 +11,5 @@ func (l *Dense) Estimate(input []float64) []float64 {
 	return l.bias.Estimate(input)
 }
 
-func (l *Dense) Gradients() [][]flo
+func (l *Dense) Gradients() [][]float64 {
+	return appe
