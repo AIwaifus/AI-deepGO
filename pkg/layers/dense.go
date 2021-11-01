@@ -27,3 +27,4 @@ func (l *Dense) SetShape(shape []uint64) {
 }
 
 func (l *Dense) Shape() []uint64 {
+	return l.bias.Shape(
