@@ -2,4 +2,5 @@ package layers
 
 import "github.com/therfoo/therfoo/pkg/graph"
 
-var AND = graph.
+var AND = graph.Features{
+	X: [][]float
