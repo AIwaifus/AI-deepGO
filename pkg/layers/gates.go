@@ -4,4 +4,7 @@ import "github.com/therfoo/therfoo/pkg/graph"
 
 var AND = graph.Features{
 	X: [][]float64{{0, 0}, {0, 1}, {1, 0}, {1, 1}},
-	Y:
+	Y: [][]float64{{0}, {0}, {0}, {1}},
+}
+
+v
