@@ -7,4 +7,5 @@ var AND = graph.Features{
 	Y: [][]float64{{0}, {0}, {0}, {1}},
 }
 
-var NAND = graph.Featur
+var NAND = graph.Features{
+	X: [][]float64{{0, 0}, {0, 1}, {
