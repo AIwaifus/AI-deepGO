@@ -12,4 +12,5 @@ var NAND = graph.Features{
 	Y: [][]float64{{1}, {1}, {1}, {0}},
 }
 
-var 
+var OR = graph.Features{
+	X: [][
