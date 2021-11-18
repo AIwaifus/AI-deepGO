@@ -19,4 +19,5 @@ var OR = graph.Features{
 
 var XOR = graph.Features{
 	X: [][]float64{{0, 0}, {0, 1}, {1, 0}, {1, 1}},
-	Y: 
+	Y: [][]float64{{0}, {1}, {1}, {0}},
+}
