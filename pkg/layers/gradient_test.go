@@ -58,3 +58,38 @@ func TestGradient(t *testing.T) {
 		{0, AND, polynomialGraph()},
 		{1, NAND, polynomialGraph()},
 		{2, OR, polynomialGraph()},
+		{3, XOR, polynomialGraph()},
+	} {
+		t.Run(strconv.Itoa(k), func(t *testing.T) {
+			v.Data.DisableClassWeights = true
+			v.Data.DisableShuffle = true
+
+			v.Graph.Apply(graph.Config{}.Validate())
+
+			fitter := graph.Fitter{Training: v.Data}
+			fitter.Fit(v.Graph, writer)
+
+			for m := range v.Data.X {
+				x := v.Data.X[m]
+				y := v.Data.Y[m]
+
+				want := v.Graph.NumericGradients(x, y)
+
+				v.Graph.Minimize(v.Graph.Loss(x, y))
+				got := v.Graph.Gradients()
+
+				for i := range want {
+					for j := range want[i] {
+						for k := range want[i][j] {
+							if math.Abs(math.Abs(want[i][j][k]-got[i][j][k])) > epsilon {
+								t.Errorf("%s %d, weight: %d, want %g, got %g", name(v.Graph[i]), i, k, want[i][j][k], got[i][j][k])
+							} else {
+								t.Logf("%s%s %d, weight: %d, want %g got %g%s", green, name(v.Graph[i]), i, k, want[i][j][k], got[i][j][k], nc)
+							}
+						}
+					}
+				}
+			}
+		})
+	}
+}
