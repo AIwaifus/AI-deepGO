@@ -1,3 +1,5 @@
 package layers
 
-type layer struc
+type layer struct {
+	inputShape  Shape
+	outpu
