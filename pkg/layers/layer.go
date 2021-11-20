@@ -2,4 +2,5 @@ package layers
 
 type layer struct {
 	inputShape  Shape
-	outpu
+	outputShape Shape
+	output      []flo
