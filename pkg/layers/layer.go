@@ -3,4 +3,7 @@ package layers
 type layer struct {
 	inputShape  Shape
 	outputShape Shape
-	output      []flo
+	output      []float64
+}
+
+func (l *layer) Mi
