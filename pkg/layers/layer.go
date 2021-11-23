@@ -6,4 +6,8 @@ type layer struct {
 	output      []float64
 }
 
-func (l *layer) Minimize(loss []float6
+func (l *layer) Minimize(loss []float64) []float64 {
+	return loss
+}
+
+f
