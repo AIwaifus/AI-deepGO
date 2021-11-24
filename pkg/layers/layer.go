@@ -10,4 +10,4 @@ func (l *layer) Minimize(loss []float64) []float64 {
 	return loss
 }
 
-f
+func (l *layer) Shape() []ui
