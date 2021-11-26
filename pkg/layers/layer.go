@@ -14,4 +14,4 @@ func (l *layer) Shape() []uint64 {
 	return l.outputShape.Shape()
 }
 
-func (l *la
+func (l *layer) SetShape(shape []uint
