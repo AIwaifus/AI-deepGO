@@ -12,3 +12,6 @@ type Polynomial struct {
 	Degree int
 	input  []float64
 	terms  [][]float64
+}
+
+func (l *Polynomial)
