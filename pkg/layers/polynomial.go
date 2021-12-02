@@ -10,4 +10,5 @@ type Polynomial struct {
 	layer
 	learner
 	Degree int
-	in
+	input  []float64
+	terms  [][]float64
