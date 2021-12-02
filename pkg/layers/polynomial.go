@@ -6,4 +6,5 @@ import (
 	"strings"
 )
 
-type P
+type Polynomial struct {
+	
