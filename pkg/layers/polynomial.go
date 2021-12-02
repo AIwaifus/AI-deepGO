@@ -7,4 +7,7 @@ import (
 )
 
 type Polynomial struct {
-	
+	layer
+	learner
+	Degree int
+	in
