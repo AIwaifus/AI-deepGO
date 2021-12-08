@@ -16,4 +16,5 @@ type Polynomial struct {
 
 func (l *Polynomial) Estimate(input []float64) []float64 {
 	copy(l.input, input)
-	for j := ra
+	for j := range l.terms {
+		var p flo
