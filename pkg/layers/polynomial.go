@@ -24,3 +24,7 @@ func (l *Polynomial) Estimate(input []float64) []float64 {
 		}
 		l.output[j] = input[j] * p
 	}
+	return l.output
+}
+
+func 
