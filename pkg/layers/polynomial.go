@@ -37,4 +37,7 @@ func (l *Polynomial) Minimize(gradients []float64) []float64 {
 		}
 		gradients[j] = gradients[j] * g
 	}
-	return grad
+	return gradients
+}
+
+func (l *Polynomial
