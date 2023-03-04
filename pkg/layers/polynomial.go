@@ -59,4 +59,5 @@ func (l *Polynomial) String() string {
 }
 
 func (l *Polynomial) toYAML() string {
-	var s []strin
+	var s []string
+	s = append(s, "polynom
