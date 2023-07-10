@@ -7,3 +7,7 @@ import (
 )
 
 type Sigmoid struct {
+	layer
+}
+
+func (s *Sigmoid) Activate(z f
