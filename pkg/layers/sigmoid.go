@@ -17,3 +17,5 @@ func (s *Sigmoid) Activate(z float64) float64 {
 func (s *Sigmoid) Derive(a float64) float64 {
 	return a * (1.0 - a)
 }
+
+func (s *Sigmoid) Estimate(x []fl
