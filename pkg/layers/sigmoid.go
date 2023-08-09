@@ -29,4 +29,7 @@ func (s *Sigmoid) Minimize(loss []float64) []float64 {
 	for i := range loss {
 		loss[i] = loss[i] * s.Derive(s.output[i])
 	}
-	ret
+	return loss
+}
+
+func (s *Sigmo
