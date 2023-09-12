@@ -1,1 +1,4 @@
-package layer
+package layers
+
+import (
+	"math"
