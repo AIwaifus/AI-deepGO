@@ -35,3 +35,4 @@ func (s *Sigmoid) Minimize(loss []float64) []float64 {
 func (s *Sigmoid) String() string {
 	lines := []string{"sigmoid:"}
 	lines = append(lines, fmt.Sprintf("%soutputs:", indent))
+	for _, v := range s.outp
