@@ -6,4 +6,5 @@ import (
 	"testing"
 )
 
-func TestSigmoidActi
+func TestSigmoidActivate(t *testing.T) {
+	var sigm
