@@ -4,3 +4,6 @@ import (
 	"math"
 	"strconv"
 	"testing"
+)
+
+func TestSigmoidActi
