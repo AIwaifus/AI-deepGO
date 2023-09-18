@@ -14,4 +14,5 @@ func TestSigmoidActivate(t *testing.T) {
 		t.Run(strconv.Itoa(k), func(t *testing.T) {
 			s := new(Sigmoid)
 			want := sigmoid(v)
-			got :
+			got := s.Activate(v)
+			if want-got > 1
