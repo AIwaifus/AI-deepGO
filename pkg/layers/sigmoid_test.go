@@ -15,4 +15,5 @@ func TestSigmoidActivate(t *testing.T) {
 			s := new(Sigmoid)
 			want := sigmoid(v)
 			got := s.Activate(v)
-			if want-got > 1
+			if want-got > 1e-16 {
+				t.Errorf("want %g, got %g
