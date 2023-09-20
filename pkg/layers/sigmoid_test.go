@@ -22,4 +22,5 @@ func TestSigmoidActivate(t *testing.T) {
 	}
 }
 
-func TestSigmoidDerive
+func TestSigmoidDerive(t *testing.T) {
+	var sigm
