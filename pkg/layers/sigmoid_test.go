@@ -23,4 +23,5 @@ func TestSigmoidActivate(t *testing.T) {
 }
 
 func TestSigmoidDerive(t *testing.T) {
-	var sigmoid = func(x float64) f
+	var sigmoid = func(x float64) float64 {
+		return math.Exp(x
