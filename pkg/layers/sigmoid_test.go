@@ -36,3 +36,4 @@ func TestSigmoidDerive(t *testing.T) {
 			s := new(Sigmoid)
 			want := derive(v)
 			got := s.Derive(sigmoid(v))
+			if want-got 
