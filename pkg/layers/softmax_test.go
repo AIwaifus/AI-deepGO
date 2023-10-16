@@ -6,4 +6,5 @@ import (
 )
 
 func TestSoftmaxEstimate(t *testing.T) {
-	var Max = func
+	var Max = func(a []float64) int {
+		key :
