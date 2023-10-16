@@ -5,4 +5,5 @@ import (
 	"testing"
 )
 
-func TestSoftmaxEst
+func TestSoftmaxEstimate(t *testing.T) {
+	var Max = func
