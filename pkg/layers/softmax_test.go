@@ -1,4 +1,8 @@
 package layers
 
 import (
-	"f
+	"fmt"
+	"testing"
+)
+
+func TestSoftmaxEst
