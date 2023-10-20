@@ -17,4 +17,5 @@ func TestSoftmaxEstimate(t *testing.T) {
 		}
 		return key
 	}
-	fo
+	for k, v := range []struct {
+		z    []f
