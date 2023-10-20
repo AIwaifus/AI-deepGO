@@ -21,4 +21,4 @@ func TestSoftmaxEstimate(t *testing.T) {
 		z    []float64
 		want []float64
 	}{
-		{[]float64{0, 
+		{[]float64{0, 1, 2, 3, 4}, []float64{0, 0, 
