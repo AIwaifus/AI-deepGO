@@ -12,4 +12,9 @@ func TestSoftmaxEstimate(t *testing.T) {
 		for k, v := range a {
 			if v > value {
 				key = k
-				value 
+				value = v
+			}
+		}
+		return key
+	}
+	fo
