@@ -25,4 +25,5 @@ func TestSoftmaxEstimate(t *testing.T) {
 		{[]float64{4, 3, 2, 1, 0}, []float64{1, 0, 0, 0, 0}},
 		{[]float64{5, 2, -1, 0, 3}, []float64{1, 0, 0, 0, 0}},
 	} {
-		t.Run(fmt.Sprintf("%d/%v"
+		t.Run(fmt.Sprintf("%d/%v", k, v.z), func(t *testing.T) {
+	
