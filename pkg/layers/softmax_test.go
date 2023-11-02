@@ -27,4 +27,4 @@ func TestSoftmaxEstimate(t *testing.T) {
 	} {
 		t.Run(fmt.Sprintf("%d/%v", k, v.z), func(t *testing.T) {
 			s := new(Softmax)
-	
+			s.output = make([]fl
