@@ -29,4 +29,5 @@ func TestSoftmaxEstimate(t *testing.T) {
 			s := new(Softmax)
 			s.output = make([]float64, len(v.z))
 			want := Max(v.want)
-			got := Max(
+			got := Max(s.Estimate(v.z))
+			if want !
