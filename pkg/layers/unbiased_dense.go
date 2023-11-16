@@ -9,4 +9,6 @@ import (
 type UnbiasedDense struct {
 	layer
 	learner
-	gradients []
+	gradients []float64
+	input     []float64
+	Neurons
