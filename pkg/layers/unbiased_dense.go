@@ -7,4 +7,6 @@ import (
 )
 
 type UnbiasedDense struct {
-	l
+	layer
+	learner
+	gradients []
