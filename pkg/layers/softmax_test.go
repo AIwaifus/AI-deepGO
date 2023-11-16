@@ -31,4 +31,7 @@ func TestSoftmaxEstimate(t *testing.T) {
 			want := Max(v.want)
 			got := Max(s.Estimate(v.z))
 			if want != got {
-				t.Errorf("want %d, g
+				t.Errorf("want %d, got %d", want, got)
+			}
+		})
+	
