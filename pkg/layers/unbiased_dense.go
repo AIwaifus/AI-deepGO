@@ -14,4 +14,4 @@ type UnbiasedDense struct {
 	Neurons   uint64
 }
 
-func (d *Unb
+func (d *UnbiasedDense) Estimate(input []fl
