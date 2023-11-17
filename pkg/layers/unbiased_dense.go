@@ -16,4 +16,5 @@ type UnbiasedDense struct {
 
 func (d *UnbiasedDense) Estimate(input []float64) []float64 {
 	d.input = input
-	for j := range 
+	for j := range d.weights {
+		var z float6
