@@ -19,4 +19,8 @@ func (d *UnbiasedDense) Estimate(input []float64) []float64 {
 	for j := range d.weights {
 		var z float64
 		for k := range d.weights[j] {
-			z = math.FMA(d.weights[j][k], input[k], z
+			z = math.FMA(d.weights[j][k], input[k], z)
+		}
+		d.output[j] = z
+	}
+	
