@@ -31,4 +31,5 @@ func (d *UnbiasedDense) Minimize(gradients []float64) []float64 {
 		d.gradients[k] = 0
 	}
 	for j := range d.weights {
-		for k := range d.weights
+		for k := range d.weights[j] {
+			d.localGradients[j]
