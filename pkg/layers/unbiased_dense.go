@@ -56,4 +56,5 @@ func (d *UnbiasedDense) SetShape(shape []uint64) {
 }
 
 func (d *UnbiasedDense) String() string {
-	var s []strin
+	var s []string
+	s = append(s, "dense:"
