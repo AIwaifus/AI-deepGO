@@ -58,4 +58,5 @@ func (d *UnbiasedDense) SetShape(shape []uint64) {
 func (d *UnbiasedDense) String() string {
 	var s []string
 	s = append(s, "dense:")
-	s = append(s, fmt.Sprintf("%sinpu
+	s = append(s, fmt.Sprintf("%sinputs:", indent))
+	for _, v :
