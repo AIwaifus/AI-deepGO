@@ -55,4 +55,5 @@ func (d *UnbiasedDense) SetShape(shape []uint64) {
 	}
 }
 
-func (d *UnbiasedDense) Str
+func (d *UnbiasedDense) String() string {
+	var s []strin
