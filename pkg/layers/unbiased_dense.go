@@ -52,4 +52,7 @@ func (d *UnbiasedDense) SetShape(shape []uint64) {
 	for j := range d.weights {
 		d.localGradients[j] = make([]float64, w)
 		d.weights[j] = Random(w)
-	
+	}
+}
+
+func (d *UnbiasedDense) Str
