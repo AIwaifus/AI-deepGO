@@ -66,4 +66,4 @@ func (d *UnbiasedDense) String() string {
 	for _, v := range d.output {
 		s = append(s, fmt.Sprintf("%s%s- %g", indent, indent, v))
 	}
-	s 
+	s = append(s, fmt.Sprintf("%swei
