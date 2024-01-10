@@ -1,4 +1,5 @@
 package optimizers
 
 type Momentum struct {
-	gradie
+	gradients [][]float64
+	momentum  float
