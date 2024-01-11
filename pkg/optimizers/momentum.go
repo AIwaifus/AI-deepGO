@@ -2,4 +2,7 @@ package optimizers
 
 type Momentum struct {
 	gradients [][]float64
-	momentum  float
+	momentum  float64
+}
+
+func (m Momentum
