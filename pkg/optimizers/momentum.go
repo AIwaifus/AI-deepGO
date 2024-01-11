@@ -5,4 +5,4 @@ type Momentum struct {
 	momentum  float64
 }
 
-func (m Momentum
+func (m Momentum) Apply(weights [][]fl
