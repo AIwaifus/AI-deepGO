@@ -5,4 +5,5 @@ type Momentum struct {
 	momentum  float64
 }
 
-func (m Momentum) Apply(weights [][]fl
+func (m Momentum) Apply(weights [][]float64) Momentum {
+	gradient
