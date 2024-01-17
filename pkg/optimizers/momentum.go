@@ -16,4 +16,4 @@ func (m Momentum) Apply(weights [][]float64) Momentum {
 	}
 }
 
-func (
+func (m Momentum) Optimize(gradi
