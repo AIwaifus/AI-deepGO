@@ -7,4 +7,4 @@ type RMSprop struct {
 	momentum  float64
 }
 
-func 
+func (m RMSprop) Apply(weights
