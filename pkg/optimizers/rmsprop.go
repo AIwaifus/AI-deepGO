@@ -18,4 +18,4 @@ func (m RMSprop) Apply(weights [][]float64) RMSprop {
 	}
 }
 
-func (m RMSprop) Opti
+func (m RMSprop) Optimize(gradients [][]float64) [][]float64
