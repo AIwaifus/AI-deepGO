@@ -21,4 +21,8 @@ func (m RMSprop) Apply(weights [][]float64) RMSprop {
 func (m RMSprop) Optimize(gradients [][]float64) [][]float64 {
 	for i := range gradients {
 		for j := range gradients[i] {
-			m.gradients[i][j] = m.momentum*m.gradients[i][j] + (1-m.momentum)*math.Pow(gradients[i][j],
+			m.gradients[i][j] = m.momentum*m.gradients[i][j] + (1-m.momentum)*math.Pow(gradients[i][j], 2)
+		}
+	}
+	return m.gradients
+}
