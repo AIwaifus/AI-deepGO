@@ -2,4 +2,5 @@ package regularizers
 
 import "math"
 
-type Lass
+type Lasso struct {
+	Lambda  float64
