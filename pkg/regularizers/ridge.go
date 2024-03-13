@@ -1,3 +1,6 @@
 package regularizers
 
-import "math
+import "math"
+
+type Ridge struct {
+	Lambda  flo
