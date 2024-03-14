@@ -3,4 +3,8 @@ package regularizers
 import "math"
 
 type Ridge struct {
-	Lambda  flo
+	Lambda  float64
+	weights [][]float64
+}
+
+fu
