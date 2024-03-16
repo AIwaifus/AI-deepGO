@@ -8,4 +8,4 @@ type Ridge struct {
 }
 
 func (r Ridge) Apply(weights [][]float64) Ridge {
-	return Ri
+	return Ridge{Lambda: r.Lambda, weight
