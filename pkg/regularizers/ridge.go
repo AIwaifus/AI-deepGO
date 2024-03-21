@@ -22,4 +22,4 @@ func (r Ridge) Regularize(gradients [][]float64) {
 	}
 }
 
-var 
+var DefaultRidge = Ridge{Lambda: 
